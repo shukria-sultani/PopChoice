@@ -1,42 +1,66 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.carter-one-regular {
+  font-family: "Carter One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.roboto-slab {
+  font-family: "Roboto Slab", serif;
+}
+*{
+  font-family: "Roboto Slab";
+}
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:  #000C36;
+  max-width: 300px;
+  color: #ffff;
+  margin: 0px auto;
+  padding: 30px;
+}
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header h1{
+  font-family: "Carter One";
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.user-data form{
+  display: flex;
+  flex-direction: column;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
+.user-data form input{
+  background-color: #3B4877;
+  color: #ffff;
+  padding: 15px;
+  height: 30px;
+  border: none;
+  margin: 7px 0px;
+  outline: none;
+  border-radius: 7px;
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.user-data form label{
+  padding-top: 20px;
 }
-
-.card {
-  padding: 2em;
+button{
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 7px;
+  background-color: #51E08A;
+  color: #000C36;
+  border: none;
+  outline: none;
+  font-size: x-large;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: 1s ease-out;
 }
-
-.read-the-docs {
-  color: #888;
+button:hover{
+  box-shadow: 2px 4px 3px #3B4877;
 }
