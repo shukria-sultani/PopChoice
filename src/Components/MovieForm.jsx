@@ -1,4 +1,3 @@
-
 // image
 import movieIcon from "../assets/images/movieIcon.png"
 export function MovieForm (){

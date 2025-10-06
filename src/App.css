@@ -12,13 +12,17 @@
 main{
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   background-color:  #000C36;
   max-width: 300px;
+  height: auto;
   color: #ffff;
   margin: 0px auto;
   padding: 30px;
+}
+.suggestion-container{
+     height: 100vh;
+
 }
 header{
   display: flex;
@@ -63,4 +67,11 @@ button{
 }
 button:hover{
   box-shadow: 2px 4px 3px #3B4877;
+}
+
+.suggestion h2{
+  text-align: center;
+}
+.suggestion button{
+  width: 100%;
 }
