@@ -20,10 +20,7 @@ main{
   margin: 0px auto;
   padding: 30px;
 }
-.suggestion-container{
-     height: 100vh;
 
-}
 header{
   display: flex;
   justify-content: center;
