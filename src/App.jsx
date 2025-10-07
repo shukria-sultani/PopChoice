@@ -31,7 +31,7 @@ const handleSubmit = async (e) => {
         const response = await fetch(WORKER_URL, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(answers), // Send all answers in the body
+            body: JSON.stringify(answers), 
         });
 
         if (!response.ok) {
