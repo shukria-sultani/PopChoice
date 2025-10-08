@@ -35,11 +35,11 @@ npm install -g wrangler
 wrangler init movie-worker
 Define Secrets: You must use Wrangler to store your secrets securely in the Cloudflare environment. These secrets will be accessed by your Worker script:
 
-# 1. OpenAI Key for Embeddings and GPT
+1. OpenAI Key for Embeddings and GPT
 wrangler secret put OPENAI_API_KEY
-# 2. Supabase URL (e.g., [https://your-project.supabase.co])
+2. Supabase URL (e.g., [https://your-project.supabase.co])
 wrangler secret put SUPABASE_URL
-# 3. Supabase Anon Key (the public key from your Supabase project settings)
+3. Supabase Anon Key (the public key from your Supabase project settings)
 wrangler secret put SUPABASE_ANON_KEY
 
 Deploy the Worker: Once your Worker code is written to utilize these secrets (it should proxy requests from your React app to the respective APIs), deploy it:
@@ -111,4 +111,11 @@ Run the App:
 
 npm start
 On the first load, the application will automatically run setupMovieEmbeddings, which uses the Cloudflare Worker to send the movie data to OpenAI for embedding, and then inserts the resulting vectors into your populated Supabase table.
+
+App UI
+Movie Form
+<img width="182" height="355" alt="movie form" src="https://github.com/user-attachments/assets/504c88ce-1286-4954-840d-7f1308ef11bb" />
+
+Suggestion
+<img width="182" height="397" alt="suggestion" src="https://github.com/user-attachments/assets/e8b50336-39d8-4486-aa51-5883c6f42c6f" />
 
